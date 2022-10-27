@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+
+.backDrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1100;
+  padding: 1rem;
+  transition: background-color 0.25s ease-in-out;
+  background-color: rgba($color: $dark-color, $alpha: 0.3);
+  display: flex;
+  align-items: center;
+}
