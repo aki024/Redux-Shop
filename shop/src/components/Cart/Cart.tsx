@@ -1,3 +1,4 @@
+import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
 import ShopList from "../ShopList/ShopList";
 
@@ -8,9 +9,7 @@ const Cart = () => {
   return (
     <>
       <button onClick={() => setCartActive(true)}>{quantity}</button>
-      {cartActive && (
-        <ShopList cartActive={cartActive} setCartActive={setCartActive} />
-      )}
+      <ShopList cartActive={cartActive} setCartActive={setCartActive} />
     </>
   );
 };
